@@ -1,7 +1,10 @@
 package io.hhplus.tdd.point.unit;
 
 import io.hhplus.tdd.point.*;
-import org.apache.catalina.User;
+import io.hhplus.tdd.point.domain.UserPoint;
+import io.hhplus.tdd.point.repository.PointHistoryRepository;
+import io.hhplus.tdd.point.repository.PointRepository;
+import io.hhplus.tdd.point.service.PointService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

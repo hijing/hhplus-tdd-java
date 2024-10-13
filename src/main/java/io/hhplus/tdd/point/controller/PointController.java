@@ -1,5 +1,10 @@
-package io.hhplus.tdd.point;
+package io.hhplus.tdd.point.controller;
 
+import io.hhplus.tdd.point.dto.PointChargeReq;
+import io.hhplus.tdd.point.domain.PointHistory;
+import io.hhplus.tdd.point.domain.UserPoint;
+import io.hhplus.tdd.point.dto.PointUseReq;
+import io.hhplus.tdd.point.service.PointService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -52,7 +57,7 @@ public class PointController {
     @PatchMapping("{id}/use")
     public UserPoint use(
             @PathVariable long id,
-            @RequestBody PointChargeReq dto
+            @RequestBody PointUseReq dto
     ) {
         return pointService.use(id, dto.amount());
     }

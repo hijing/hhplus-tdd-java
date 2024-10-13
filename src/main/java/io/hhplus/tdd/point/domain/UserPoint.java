@@ -1,6 +1,4 @@
-package io.hhplus.tdd.point;
-
-import org.apache.catalina.User;
+package io.hhplus.tdd.point.domain;
 
 public record UserPoint(
         long id,
